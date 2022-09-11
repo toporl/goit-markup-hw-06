@@ -301,10 +301,10 @@
     </main>
     <footer class="footer">
       <div class="container flex">
-        <div class="left">
+        <div class="footer-left">
           <a class="footer-logo" href=""> <span class="web">Web</span>Studio</a>
           <address class="address">
-            <ul class="list">
+            <ul class="address-list list">
               <li class="footer-address">
                 <a
                   class="address-link"
@@ -328,7 +328,7 @@
             </ul>
           </address>
         </div>
-        <div class="center">
+        <div class="footer-center">
           <h3 class="subtitle join">ПРИЄДНУЙТЕСЬ</h3>
           <ul class="join-list-link">
             <li class="social-link">
@@ -384,6 +384,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-right">
+          <h3 class="subtitle join">Підпишіться на розсилку</h3>
+          <form class="mailing-list">
+            <label class="mail-label" for="mail"></label>
+            <input
+              class="mail-input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              required
+            />
+            <button class="mailing-btn">
+              Підписатися
+              <svg class="mailing-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
