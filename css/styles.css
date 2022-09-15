@@ -241,6 +241,9 @@ ul {
   height: 581px;
   background-color: var(--white-text-color);
   padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .btn-close {
@@ -339,16 +342,15 @@ textarea[name="comment"]::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.policity {
-  display: inline-flex;
-  justify-content: center;
+.policity-label {
+  display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
 .policity-icon {
   border-radius: 2px;
-  margin-right: 8px;
   transition: background-color 250ms var(--cubic);
 }
 
@@ -384,7 +386,7 @@ textarea[name="comment"]::placeholder {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 4px;
+  margin-left: 8px;
 }
 
 .register-btn {
