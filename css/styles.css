@@ -301,6 +301,7 @@ ul {
   padding-left: 42px;
   padding-right: 42px;
   outline: transparent;
+  cursor: pointer;
 
   transition: border-color 250ms var(--cubic);
 }
@@ -711,6 +712,7 @@ textarea[name="comment"]::placeholder {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--footer-color);
+  cursor: pointer;
 }
 
 .mailing-btn {
