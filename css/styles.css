@@ -261,8 +261,13 @@ ul {
   cursor: pointer;
 }
 
-.icon-btn-close {
+.btn-close {
   fill: #000000;
+  transition: fill 250ms var(--cubic);
+}
+
+.icon-btn-close:hover {
+  fill: #2196f3;
 }
 
 .form-title {
@@ -279,8 +284,6 @@ ul {
 .register-form {
   display: flex;
   flex-direction: column;
-  width: 448px;
-  height: 332px;
 }
 
 .column-name {
@@ -297,7 +300,6 @@ ul {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
   padding-left: 42px;
   padding-right: 42px;
   outline: transparent;
@@ -316,6 +318,7 @@ ul {
 
 .register-label {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .register-icon {
@@ -327,10 +330,11 @@ ul {
 }
 
 .register-comment {
-  display: block;
+  margin-bottom: 20px;
 }
 
 .comment {
+  display: block;
   height: 120px;
   padding: 12px;
   resize: none;
@@ -621,6 +625,7 @@ textarea[name="comment"]::placeholder {
 }
 
 .footer-left {
+  flex-grow: 1;
   margin-right: 70px;
 }
 
@@ -636,10 +641,6 @@ textarea[name="comment"]::placeholder {
 
 .address {
   margin-top: 20px;
-}
-
-.address-list {
-  width: 231px;
 }
 
 .address-link {
@@ -671,6 +672,7 @@ textarea[name="comment"]::placeholder {
 }
 
 .join {
+  display: block;
   color: var(--white-text-color);
   font-style: normal;
   margin-bottom: 20px;
@@ -727,6 +729,13 @@ textarea[name="comment"]::placeholder {
   background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
 }
 
 .mailing-icon {
